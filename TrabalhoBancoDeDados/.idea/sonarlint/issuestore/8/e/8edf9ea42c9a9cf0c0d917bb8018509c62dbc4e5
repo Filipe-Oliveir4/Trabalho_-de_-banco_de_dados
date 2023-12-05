@@ -1,0 +1,15 @@
+
+~
+java:S1488-"bImmediately return this expression instead of assigning it to the temporary variable "ocorrencia".(™è¼h8ÕÉ¿Ã1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏÅºà8ÕÉ¿Ã1
+`
+java:S2583""CChange this condition so that it does not always evaluate to "true"(œñìÕ8µÕÉ¿Ã1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶ÕÉ¿Ã1
+—
+java:S2159""zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(œñìÕ8»ÕÉ¿Ã1
+D
+java:S1125$"(Remove the unnecessary boolean literals.(²™ÚC8½ÕÉ¿Ã1
+F	java:S106'"+Replace this use of System.out by a logger.(óâÌy8¾ÕÉ¿Ã1
+]
+java:S1128"@Remove this unused import 'com.TrabalhoBancoDeDados.model.Sala'.(€ı¬Ğ8ÀÕÉ¿Ã1

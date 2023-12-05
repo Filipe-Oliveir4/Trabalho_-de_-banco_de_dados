@@ -1,8 +1,16 @@
+--Criação banco de dados
+CREATE DATABASE "TrabalhoBancoDeDados"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
 --montagem banco de dados do trabalho
 --tabela que armazena os predios
 create table predio(
-	letra_predio varchar(1) primary key;
-)
+	letra_predio varchar(1) primary key
+);
 
 --tabela que vai armazenar as salas
 create table sala(
@@ -27,24 +35,54 @@ create table ocorrencia(
 	cod_sala varchar(10),
 	cod_equipamento int,
 	data_ocorrencia Timestamp,
-	solucionado bit
+	solucionado bit,
+	FOREIGN KEY(cod_sala)REFERENCES sala(cod_sala),
+	FOREIGN KEY(cod_equipamento)REFERENCES equipamento(cod_equipamento)
 );
-
---adicionando fk
-ALTER TABLE IF EXISTS public.ocorrencia
-    ADD CONSTRAINT cod_autor_fkey FOREIGN KEY (cod_autor)
-    REFERENCES public.Autor (cod_autor);
-
+--adicionando coluna descrição
+ALTER TABLE ocorrencia add COLUMN descricao varchar(300);
 --colocando horario defalt na tabela ocorrencia
 ALTER TABLE ocorrencia ALTER COLUMN data_ocorrencia set DEFAULT current_timestamp;
-
 --colocando defalt no solucionado
-ALTER TABLE ocorrencia ALTER COLUMN solucionado set DEFAULT binary(0);
+ALTER TABLE ocorrencia ALTER COLUMN solucionado set DEFAULT '0';
 
---colocando a coluna descricao na tabela ocorrencia
-ALTER TABLE ocorrencia ALTER COLUMN solucionado type boolean;
---select
+--Populando tabelas
+
+--Tabela predio
+insert into predio values
+('a'),
+('b'),
+('c'),
+('d'),
+('e');
+
+insert into sala (cod_sala, nome_sala, letra_predio) values
+('b401', 'lamiI', 'b'),
+('b402', 'lamiII', 'b'),
+('b403', 'lamiIII', 'b'),
+('b404', 'lamiIV', 'b'),
+('b405', 'lamiV', 'b'),
+('b406', 'lamiVI', 'b'),
+('b407', 'lamiVII','b'),
+('b408', 'lamiVIII', 'b'),
+('b409', 'lamiIV', 'b'),
+('b410', 'lamiX', 'b');
+
+insert into equipamento(tipo_equipamento, marca, cod_sala) values
+('Ar-condicionado','Carrier','b401'),
+('Computador', 'Dell','b401'),
+('Ar-condicionado','Carrier','b402'),
+('Computador', 'Dell','b405');
+
+
+--selects
+select * from equipamento;
+select * from sala;
+select * from predio;
 select * from ocorrencia;
--- insert
-insert into ocorrencia(cod_sala,cod_equipamento,solucionado) values('teste',3,'0');
-insert into ocorrencia(descricao) values('teste') WHERE cod_ocorrencia = 1;
+
+select * from sala where cod_sala ='b408';
+select * from ocorrencia where cod_ocorrencia ='1';
+
+--update
+update ocorrencia set solucionado = '1' where cod_ocorrencia=?
