@@ -8,7 +8,7 @@ public class Ocorrencia {
     String codSala;
     Integer codEquipamento;
     Date dataOcorrencia;
-    boolean solucionado;
+    Boolean solucionado;
     String descricao;
 
 
@@ -65,11 +65,11 @@ public class Ocorrencia {
 
     }
 
-    public boolean isSolucionado() {
+    public Boolean isSolucionado() {
         return solucionado;
     }
 
-    public void setSolucionado(boolean solucionado) {
+    public void setSolucionado(Boolean solucionado) {
         this.solucionado = solucionado;
     }
 

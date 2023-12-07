@@ -36,10 +36,10 @@ public class OcorrenciaRepository {
             emp.setCodSala(String.valueOf(empRow.get("cod_sala")));
             emp.setCodEquipamento(!String.valueOf(empRow.get("cod_equipamento")).equals(null)?Integer.parseInt(String.valueOf(empRow.get("cod_equipamento"))):null);
             emp.setDataOcorrencia((Timestamp) empRow.get("data_ocorrencia"));
-            emp.setSolucionado(String.valueOf(empRow.get("solucionado")).equals("1")?true:false);
+            emp.setSolucionado((Boolean) empRow.get("solucionado"));
             emp.setDescricao(String.valueOf(empRow.get("descricao")));
             empList.add(emp);
-            System.out.println(String.valueOf(empRow.get("solucionado")).equals("1")?true:false);
+            System.out.println((empRow.get("solucionado")));
         }
         return empList;
     }

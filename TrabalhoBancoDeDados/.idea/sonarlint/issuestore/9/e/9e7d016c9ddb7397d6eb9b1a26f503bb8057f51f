@@ -1,22 +1,18 @@
 
-r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ±òÍøÿÿÿÿ8·¹á®Ä1
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ±òÍøÿÿÿÿ8éß‘¯Ä1
 ~
-java:S14880"bImmediately return this expression instead of assigning it to the temporary variable "ocorrencia".(™è¼h8¹¹á®Ä1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏÅºà8¼¹á®Ä1
+java:S14880"bImmediately return this expression instead of assigning it to the temporary variable "ocorrencia".(™è¼h8êß‘¯Ä1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏÅºà8ëß‘¯Ä1
 `
-java:S2583%"CChange this condition so that it does not always evaluate to "true"(œñìÕ8Ÿºá®Ä1
+java:S2583%"CChange this condition so that it does not always evaluate to "true"(œñìÕ8‰à‘¯Ä1
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8 ºá®Ä1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Šà‘¯Ä1
 —
-java:S2159%"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(œñìÕ8¥ºá®Ä1
-J
-java:S1125'"(Remove the unnecessary boolean literals.(õºÿíÿÿÿÿÿ8¦ºá®Ä1
-L	java:S106*"+Replace this use of System.out by a logger.(È·÷ışÿÿÿÿ8§ºá®Ä1
-J
-java:S1125*"(Remove the unnecessary boolean literals.(È·÷ışÿÿÿÿ8¨ºá®Ä1
+java:S2159%"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(œñìÕ8à‘¯Ä1
+L	java:S106*"+Replace this use of System.out by a logger.(ĞÔÙÃıÿÿÿÿ8‘à‘¯Ä1
 ]
-java:S1128"@Remove this unused import 'com.TrabalhoBancoDeDados.model.Sala'.(€ı¬Ğ8™Ëã®Ä1
+java:S1128"@Remove this unused import 'com.TrabalhoBancoDeDados.model.Sala'.(€ı¬Ğ8À¸¯Ä1
 U
-java:S1128"3Remove this unused import 'javax.management.Query'.(³ì—ûşÿÿÿÿ8™Ëã®Ä1
+java:S1128"3Remove this unused import 'javax.management.Query'.(³ì—ûşÿÿÿÿ8À¸¯Ä1
 I
-java:S1128",Remove this unused import 'java.util.Queue'.(Äá™ô8™Ëã®Ä1
+java:S1128",Remove this unused import 'java.util.Queue'.(Äá™ô8À¸¯Ä1
