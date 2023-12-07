@@ -6,13 +6,14 @@ import com.TrabalhoBancoDeDados.repository.OcorrenciaRepository;
 import com.TrabalhoBancoDeDados.verificacao.OcorrenciaVerificacao;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
+@Controller
 public class OcorrenciaController {
 
     @Autowired
@@ -28,15 +29,15 @@ public class OcorrenciaController {
         oc.setDescricao(request.getParameter("descricao"));
         if(verificacao.inserirOcorrenciaNoBanco(oc)){
             repository.insertOcorrencia(oc);
-            return "sucesso";
+            return "index";
         }else{
             return "erro";
        }
     }
-    @RequestMapping(value = "/todasOcorrencias",method = RequestMethod.GET)
-    public List<Ocorrencia> todasOcorrencias(HttpServletRequest request){
 
-        return repository.getAllOcorrencias();
-        }
+    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    public String teste(){
+        return "index";
+    }
     }
 

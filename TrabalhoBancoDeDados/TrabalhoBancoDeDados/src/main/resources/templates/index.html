@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="divItens">
+
+</div>
+</body>
+<script>
+   $(document).ready(function (){
+       $.ajax({
+           url: "/api/sala/allSalas",
+           type: "GET",
+           dataType: "json"
+
+       }).done(function(resposta) {
+           resposta.forEach(function(resposta, i) {
+               console.log('[forEach]', resposta, i);
+           })
+       }).fail(function(jqXHR, textStatus ) {
+           console.log("Request failed: " + textStatus);
+
+       }).always(function() {
+           console.log("completou");
+       });
+   })
+
+
+</script>
+</html>

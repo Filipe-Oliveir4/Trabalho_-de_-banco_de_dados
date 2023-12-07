@@ -85,4 +85,29 @@ select * from sala where cod_sala ='b408';
 select * from ocorrencia where cod_ocorrencia ='1';
 
 --update
-update ocorrencia set solucionado = '1' where cod_ocorrencia=?
+update ocorrencia set solucionado = '0' where cod_ocorrencia=4;
+
+--delete
+delete from 
+--criação de function
+CREATE OR REPLACE FUNCTION ocorrencias_por_sala (cod varchar(10))
+RETURNS INTEGER AS $$
+DECLARE 
+    ocorrecia_por_sala INTEGER;
+BEGIN
+	select count(*) from ocorrencia 
+	into ocorrecia_por_sala 
+	where ocorrencia.cod_sala = cod;
+    RETURN ocorrecia_por_sala;
+END;
+$$
+LANGUAGE plpgsql;
+
+
+--Criação da view
+create or replace view ocorrencia_Sala_VW as
+select cod_ocorrencia,sala.cod_sala,sala.nome_sala,descricao
+from ocorrencia inner join sala
+on ocorrencia.cod_sala = sala.cod_sala;
+
+select * from ocorrencia_Sala_VW;

@@ -1,0 +1,6 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏÅºà
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
+V
+java:S1128"@Remove this unused import 'com.TrabalhoBancoDeDados.model.Sala'.(€ý¬Ð
