@@ -32,7 +32,6 @@ public class SalaRepository {
     }
 
     public Sala getSalaByCodSala(String codSala){
-        String query ="select * from sala where cod_sala =?";
         Sala sala= jdbcTemplate.queryForObject("select * from sala where cod_sala =?", BeanPropertyRowMapper.newInstance(Sala.class),codSala);
         return sala;
     }

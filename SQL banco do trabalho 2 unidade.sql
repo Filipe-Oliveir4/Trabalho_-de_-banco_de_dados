@@ -109,5 +109,7 @@ create or replace view ocorrencia_Sala_VW as
 select cod_ocorrencia,sala.cod_sala,sala.nome_sala,descricao
 from ocorrencia inner join sala
 on ocorrencia.cod_sala = sala.cod_sala;
-
 select * from ocorrencia_Sala_VW;
+
+--delete
+delete from ocorrencia where cod_ocorrencia = 1;

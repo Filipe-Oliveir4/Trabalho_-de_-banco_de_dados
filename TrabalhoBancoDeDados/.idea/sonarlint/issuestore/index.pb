@@ -1,6 +1,4 @@
 
-ä
-ZTrabalhoBancoDeDados/src/main/java/com/TrabalhoBancoDeDados/controller/HomeController.java,c\5\c52b904f1e2e3580ec831fd9b81661d91244423d
 ê
 `TrabalhoBancoDeDados/src/main/java/com/TrabalhoBancoDeDados/controller/OcorrenciaController.java,5\f\5f82a99237f2fd11502c10c9925a10bd4710b607
 ê
@@ -25,25 +23,3 @@ L
 ]TrabalhoBancoDeDados/src/main/java/com/TrabalhoBancoDeDados/controller/SalaAPIController.java,8\f\8fabc336dd269999db2d901418de2f887f4a7e48
 ì
 cTrabalhoBancoDeDados/src/main/java/com/TrabalhoBancoDeDados/controller/OcorrenciaAPIController.java,c\5\c5c38d45081dc8034244ac1ef06b9d7c5531a97d
-x
-Hsrc/main/java/com/TrabalhoBancoDeDados/controller/SalaAPIController.java,e\9\e9753f3f01516a9569138c10530325b26fcee0de
-w
-Gsrc/main/java/com/TrabalhoBancoDeDados/repository/PredioRepository.java,b\7\b7c2eb65c4492cc940797597063969c793ef0f6c
-{
-Ksrc/main/java/com/TrabalhoBancoDeDados/repository/OcorrenciaRepository.java,9\e\9e7d016c9ddb7397d6eb9b1a26f503bb8057f51f
-{
-Ksrc/main/java/com/TrabalhoBancoDeDados/controller/OcorrenciaController.java,a\c\ace3506ea60a94079db16329902e14a4cef423bc
-u
-Esrc/main/java/com/TrabalhoBancoDeDados/repository/SalaRepository.java,c\b\cbbca94b203c5e2356ff884a327e2f78c313e58d
-~
-Nsrc/main/java/com/TrabalhoBancoDeDados/controller/OcorrenciaAPIController.java,3\f\3f6019a261c678dc38ea356d450b00c387e604af
-z
-Jsrc/main/java/com/TrabalhoBancoDeDados/controller/PredioAPIController.java,f\9\f99704ff5f1063c5eee440902db8379a0eaa2e2a
-{
-Ksrc/main/java/com/TrabalhoBancoDeDados/TrabalhoBancoDeDadosApplication.java,8\d\8d99cbdc71285967b0aae7af9abd5644b28d237c
-r
-Bsrc/main/java/com/TrabalhoBancoDeDados/model/OcorrenciaSalaVW.java,d\c\dc14c1a971b8ba5161ab209e59ddc9f2a05927a5
-l
-<src/main/java/com/TrabalhoBancoDeDados/model/Ocorrencia.java,4\7\475198b8184955523a1d98aa48ecb818bfe817a7
-f
-6src/main/java/com/TrabalhoBancoDeDados/model/Sala.java,7\f\7f8d98f9b5df3a895ec97424eecd22ff230e20e7
